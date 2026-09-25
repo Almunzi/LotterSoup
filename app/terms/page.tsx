@@ -1,12 +1,17 @@
 import { LegalPage } from "../../components/legal-page";
-export const metadata = { title: "Terms of Service" };
-export default function Page(){return <LegalPage eyebrow="Using our service" title="Terms of Service" intro="These terms govern access to The LotterySoup website, newsletter, and future subscriber services." sections={[
+import { createPublicPageMetadata } from "../../lib/seo";
+export const metadata = createPublicPageMetadata({
+  title: "Terms of Service",
+  description: "Review the terms governing The LotterySoup website, weekly newsletter, account, and paid subscription services.",
+  path: "/terms",
+});
+export default function Page(){return <LegalPage eyebrow="Using our service" title="Terms of Service" intro="These terms govern access to The LotterySoup website, newsletter, and subscriber services." sections={[
   {title:"Acceptance and eligibility",paragraphs:["By using The LotterySoup, you agree to these terms and our Privacy Policy. You must be at least 18 years old and legally permitted to participate in lottery activities where you live. If local law requires a higher age, that higher age applies."]},
   {title:"Information service only",paragraphs:["The LotterySoup provides entertainment, general information, news, historical number trends, and randomized number ideas. We do not sell lottery tickets, operate a lottery, place wagers, or guarantee any outcome. Official lottery sources control all results, rules, prizes, and deadlines."]},
-  {title:"Subscriptions",paragraphs:["When paid service launches, available plans may include a seven-day free trial followed by weekly, monthly, or annual recurring billing. The price and billing interval shown at checkout will control. By subscribing, you authorize recurring charges until cancellation."]},
+  {title:"Subscriptions",paragraphs:["Available plans include a seven-day free trial followed by weekly, monthly, or annual recurring billing through Stripe. The price, billing interval, trial end, and first billing date shown at checkout will control. By subscribing, you authorize recurring charges until cancellation."]},
   {title:"Acceptable use",paragraphs:["You may use the service for personal, lawful purposes. You may not copy or resell subscriber content, interfere with the service, attempt unauthorized access, misuse automated tools, or use the service in a way that violates law or another person’s rights."]},
   {title:"Intellectual property",paragraphs:["The LotterySoup name, design, original text, graphics, and service materials are owned by or licensed to The LotterySoup. No ownership rights transfer to you through access or subscription."]},
   {title:"Service changes",paragraphs:["We may update, suspend, or discontinue features and may correct errors at any time. We aim for reliable delivery but do not promise uninterrupted or error-free service."]},
   {title:"Limitation of liability",paragraphs:["To the fullest extent permitted by law, The LotterySoup is not liable for lottery losses, missed entries, reliance on inaccurate or delayed information, lost profits, or indirect or consequential damages arising from use of the service."]},
-  {title:"Contact",paragraphs:["Questions about these terms may be sent to support@thelotterysoup.com."]}
+  {title:"Contact",paragraphs:["Questions about these terms may be sent to team@lotterysoup.com."]}
 ]} />}

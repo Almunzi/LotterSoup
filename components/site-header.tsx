@@ -14,7 +14,7 @@ export function SiteHeader() {
           <Link href="/#pricing">Pricing</Link>
           <Link href="/contact">Contact</Link>
         </nav>
-        <Link href="/#pricing" className="button button-small">Start free</Link>
+        <div className="public-nav-actions"><Link href="/login" className="login-link">Subscriber login</Link><Link href="/#pricing" className="button button-small">Start free</Link></div>
       </div>
     </header>
   );

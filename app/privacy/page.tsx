@@ -1,13 +1,18 @@
 import { LegalPage } from "../../components/legal-page";
+import { createPublicPageMetadata } from "../../lib/seo";
 
-export const metadata = { title: "Privacy Policy" };
+export const metadata = createPublicPageMetadata({
+  title: "Privacy Policy",
+  description: "Learn how The LotterySoup collects, uses, protects, and shares information related to accounts, subscriptions, and website use.",
+  path: "/privacy",
+});
 export default function Page(){return <LegalPage eyebrow="Your privacy" title="Privacy Policy" intro="This policy explains what information The LotterySoup may collect, why we use it, and the choices available to you." sections={[
-  {title:"Information we collect",paragraphs:["We may collect information you provide directly, including your name, email address, account details, support messages, and subscription selections. When checkout becomes available, payments will be handled by our payment provider; The LotterySoup will not store full payment-card numbers.","We may also receive limited technical information such as browser type, device type, pages visited, approximate location derived from an IP address, and basic usage or performance data."]},
+  {title:"Information we collect",paragraphs:["We may collect information you provide directly, including your name, email address, account details, support messages, and subscription selections. Payments are processed by Stripe. The LotterySoup receives limited billing information, such as customer, subscription, invoice, and payment-status records, but does not receive or store full payment-card numbers.","We may also receive limited technical information such as browser type, device type, pages visited, approximate location derived from an IP address, and basic usage or performance data."]},
   {title:"How we use information",paragraphs:["We use information to operate the website, deliver subscribed content, manage accounts and subscriptions, respond to support requests, prevent fraud, improve our service, and comply with applicable legal obligations."]},
   {title:"Service providers and advertising",paragraphs:["We may share only the information reasonably necessary with providers that help us host the site, send emails, process payments, analyze performance, or display and measure advertising. These providers process information under their own terms and privacy commitments. We do not sell your personal information."]},
   {title:"Cookies and choices",paragraphs:["The site may use essential cookies for security and account functionality. Analytics or advertising cookies, if introduced, will be described through an appropriate notice or preference tool where required. You may also control cookies through your browser settings."]},
   {title:"Data retention and security",paragraphs:["We keep personal information only for as long as reasonably needed for the purposes described here, including legal, accounting, and fraud-prevention needs. We use reasonable safeguards, but no internet service can promise absolute security."]},
-  {title:"Your rights",paragraphs:["Depending on where you live, you may have rights to request access, correction, deletion, or restriction of personal information. To make a request, contact support@thelotterysoup.com. We may need to verify your identity before completing a request."]},
+  {title:"Your rights",paragraphs:["Depending on where you live, you may have rights to request access, correction, deletion, or restriction of personal information. To make a request, contact team@lotterysoup.com. We may need to verify your identity before completing a request."]},
   {title:"Children",paragraphs:["The LotterySoup is intended only for adults who are legally permitted to participate in lottery activities in their location. We do not knowingly collect information from children."]},
-  {title:"Contact and changes",paragraphs:["Questions about this policy may be sent to support@thelotterysoup.com. We may update this policy as the service evolves; the effective date above will show the latest revision."]}
+  {title:"Contact and changes",paragraphs:["Questions about this policy may be sent to team@lotterysoup.com. We may update this policy as the service evolves; the effective date above will show the latest revision."]}
 ]} />}

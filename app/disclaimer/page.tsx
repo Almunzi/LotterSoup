@@ -1,5 +1,10 @@
 import { LegalPage } from "../../components/legal-page";
-export const metadata = { title: "Lottery Disclaimer" };
+import { createPublicPageMetadata } from "../../lib/seo";
+export const metadata = createPublicPageMetadata({
+  title: "Lottery & Information Disclaimer",
+  description: "Read The LotterySoup disclaimer covering official results, number trends, randomized suggestions, responsible play, and service limitations.",
+  path: "/disclaimer",
+});
 export default function Page(){return <LegalPage eyebrow="Please play responsibly" title="Lottery & Information Disclaimer" intro="The LotterySoup is an independent information and entertainment service. Please understand the limits of the content before using it." sections={[
   {title:"No affiliation",paragraphs:["The LotterySoup is not affiliated with, endorsed by, sponsored by, or operated by Powerball, Mega Millions, MUSL, any state lottery, or any government lottery authority. Names and marks belong to their respective owners."]},
   {title:"No guarantee of winning",paragraphs:["Lottery drawings are random. Historical trends, hot or cold numbers, AI-generated numbers, commentary, or any other content cannot predict or improve the chance of winning. No content is a promise or guarantee of a prize."]},
