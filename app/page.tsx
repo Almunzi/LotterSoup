@@ -95,10 +95,10 @@ export default function Home() {
           </div>
           <div className="shell how-media-grid">
             <div className="video-frame">
-              <iframe src="https://www.youtube-nocookie.com/embed/qz5wbZB5FBA?rel=0" title="How The LotterySoup works" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen />
+              <iframe src="https://www.youtube-nocookie.com/embed/bmjrzOUUWaE?rel=0" title="LotterySoup short introduction" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen />
             </div>
             <div className="party-image">
-              <Image src="/lottery-party-v3.png" width={1254} height={1254} sizes="(max-width: 880px) 92vw, 350px" alt="Colorful lottery celebration with tickets, pamphlets, ribbons, and a steaming cup" />
+              <Image src="/lottery-party-v3.png" width={1254} height={1254} sizes="(max-width: 880px) 92vw, 420px" alt="Colorful lottery celebration with tickets, pamphlets, ribbons, and a steaming cup" />
             </div>
           </div>
         </section>

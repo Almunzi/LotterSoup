@@ -121,10 +121,10 @@ img { display: block; max-width: 100%; }
 .narrow-heading h2, .sample-copy h2, .legal-hero h1 { margin: 0; font-size: clamp(42px, 5vw, 58px); font-weight: 800; line-height: .98; letter-spacing: -.015em; text-transform: uppercase; }
 .narrow-heading > p:last-child, .sample-copy > p { margin: 17px auto 0; color: var(--muted); font-size: 15px; line-height: 1.7; }
 .how-section { background: var(--page); }
-.how-media-grid { display: grid; grid-template-columns: 1.55fr .72fr; gap: 22px; align-items: center; }
-.video-frame { width: 100%; aspect-ratio: 16 / 9; padding: 0; border: 10px solid #fff; background: var(--navy); box-shadow: 0 10px 30px rgba(0, 28, 82, .14); }
+.how-media-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px; align-items: center; justify-items: center; }
+.video-frame { width: min(100%, 360px); aspect-ratio: 9 / 16; overflow: hidden; border: 10px solid #fff; background: var(--navy); box-shadow: 0 10px 30px rgba(0, 28, 82, .14); }
 .video-frame iframe { display: block; width: 100%; height: 100%; border: 0; }
-.party-image { overflow: hidden; border: 10px solid #fff; background: var(--blue); box-shadow: 0 10px 30px rgba(0, 28, 82, .14); }
+.party-image { width: min(100%, 420px); overflow: hidden; border: 10px solid #fff; background: var(--blue); box-shadow: 0 10px 30px rgba(0, 28, 82, .14); }
 .party-image img { width: 100%; height: auto; }
 
 .included-section { background: #fff; }
