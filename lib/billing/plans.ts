@@ -4,7 +4,7 @@ export const billingPlans = {
   weekly: {
     id: "weekly",
     name: "Weekly",
-    price: "$1",
+    price: "$1.34",
     period: "/ week",
     copy: "Simple, flexible access billed weekly.",
     tone: "weekly",
@@ -13,7 +13,7 @@ export const billingPlans = {
   monthly: {
     id: "monthly",
     name: "Monthly",
-    price: "$4",
+    price: "$5",
     period: "/ month",
     copy: "One easy payment each month.",
     tone: "monthly",
